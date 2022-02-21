@@ -1,0 +1,30 @@
+    <section>
+        <div class="row min-vh-100 justify-content-center align-items-center" id="home">
+            <div>
+                <img src="assets/img/imghome.jpg" class="img-fluid rounded-circle mx-auto d-block">
+                <h2 class="text-center font-weight-bold">{{fullName}}</h2>
+                <h5 class="text-center">{{city}} - {{country}}</h5>
+            </div>
+        </div>
+        
+        <div class="row vh-100 justify-content-center align-items-center" id="">
+            <div>
+                <p class="container-fluid text-justify">{{textObjetivos}}</p>
+            </div>
+        </div>
+
+        <div class="row vh-100 justify-content-center align-items-center" id="levels">
+            <div>
+                <h2 class="text-center font-weight-bold">Conocimientos</h2>
+                <div *ngFor="let skill of skills | keyvalue">{{skill.key}}: {{skill.value}}
+                    <div class="progress" style="height: 2px;">
+                        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row vh-100 justify-content-center align-items-center" id="">
+            <p>Mi primer proyecto es mi Portafolio</p>
+        </div>
+    </section>

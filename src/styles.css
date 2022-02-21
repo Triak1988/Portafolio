@@ -1,0 +1,12 @@
+body {
+    font-family: 'Outfit', sans-serif;;
+    color: #f1f6f9;
+    background-image: url(src/assets/img/nieve.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    background-color: rgba(20, 39, 78, .8);
+}
